@@ -21,9 +21,7 @@ export const Posts = () => {
     <Card sx={{ margin: 4 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
-            V
-          </Avatar>
+          <Avatar src="https://th.bing.com/th/id/OIP.wm4rELHPdg9bcjbty5emngHaH7?pid=ImgDet&rs=1" />
         }
         action={
           <IconButton aria-label="settings">
