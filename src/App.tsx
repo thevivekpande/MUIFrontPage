@@ -3,7 +3,6 @@ import { Rightbar } from "./components/Rightbar";
 import { Feed } from "./components/Feed";
 import {
   Box,
-  Container,
   PaletteMode,
   Stack,
   ThemeProvider,
@@ -20,10 +19,6 @@ function App() {
       mode: mode as PaletteMode,
     },
   });
-  const sidebarProps = {
-    mode: mode,
-    setMode: setMode,
-  };
   return (
     <ThemeProvider theme={darkTheme}>
       <Box bgcolor={"background.default"} color={"text.primary"}>
