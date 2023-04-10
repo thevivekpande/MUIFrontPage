@@ -19,6 +19,7 @@ import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import ImageIcon from "@mui/icons-material/Image";
 import { Camera } from "@mui/icons-material";
 import DateRangeIcon from "@mui/icons-material/DateRange";
+import EditIcon from "@mui/icons-material/Edit";
 
 const StyledModal = styled(Modal)({
   display: "flex",
@@ -46,7 +47,7 @@ export const Add = () => {
         onClick={() => setOpen(true)}
       >
         <Fab color="primary" aria-label="add">
-          <AddIcon />
+          {open ? <EditIcon /> : <AddIcon />}
         </Fab>
       </Tooltip>
       <StyledModal

@@ -16,6 +16,7 @@ import Person3Icon from "@mui/icons-material/Person3";
 import SettingsIcon from "@mui/icons-material/Settings";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import ModeNightIcon from "@mui/icons-material/ModeNight";
+import WbSunnyIcon from "@mui/icons-material/WbSunny";
 
 interface sidebarProps {
   setMode: Function;
@@ -86,7 +87,7 @@ export const Sidebar: React.FC<sidebarProps> = ({ setMode, mode }) => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#home">
               <ListItemIcon>
-                <ModeNightIcon />
+                {mode === "light" ? <WbSunnyIcon /> : <ModeNightIcon />}
               </ListItemIcon>
               <Switch
                 onChange={() => setMode(mode === "light" ? "dark" : "light")}
